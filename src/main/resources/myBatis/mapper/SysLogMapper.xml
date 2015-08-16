@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.kuange.framework.dao.SysLogMapper" >
+  <resultMap id="BaseResultMap" type="com.kuange.framework.model.SysLog" >
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="comment" property="comment" jdbcType="VARCHAR" />
+    <result column="log_time" property="logTime" jdbcType="TIMESTAMP" />
+    <result column="log_user_id" property="logUserId" jdbcType="BIGINT" />
+    <result column="log_user_name" property="logUserName" jdbcType="VARCHAR" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from sys_log
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.kuange.framework.model.SysLog" >
+    <selectKey resultType="java.lang.Long" keyProperty="id" order="BEFORE" >
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into sys_log (id, comment, log_time, 
+      log_user_id, log_user_name)
+    values (#{id,jdbcType=BIGINT}, #{comment,jdbcType=VARCHAR}, #{logTime,jdbcType=TIMESTAMP}, 
+      #{logUserId,jdbcType=BIGINT}, #{logUserName,jdbcType=VARCHAR})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.kuange.framework.model.SysLog" >
+    update sys_log
+    set comment = #{comment,jdbcType=VARCHAR},
+      log_time = #{logTime,jdbcType=TIMESTAMP},
+      log_user_id = #{logUserId,jdbcType=BIGINT},
+      log_user_name = #{logUserName,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select id, comment, log_time, log_user_id, log_user_name
+    from sys_log
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select id, comment, log_time, log_user_id, log_user_name
+    from sys_log
+  </select>
+</mapper>

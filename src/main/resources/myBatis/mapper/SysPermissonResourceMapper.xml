@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.kuange.framework.dao.SysPermissonResourceMapper" >
+  <resultMap id="BaseResultMap" type="com.kuange.framework.model.SysPermissonResource" >
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="resource_id" property="resourceId" jdbcType="BIGINT" />
+    <result column="resource_type" property="resourceType" jdbcType="VARCHAR" />
+    <result column="permission_id" property="permissionId" jdbcType="BIGINT" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from sys_permisson_resource
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.kuange.framework.model.SysPermissonResource" >
+    <selectKey resultType="java.lang.Long" keyProperty="id" order="BEFORE" >
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into sys_permisson_resource (id, resource_id, resource_type, 
+      permission_id)
+    values (#{id,jdbcType=BIGINT}, #{resourceId,jdbcType=BIGINT}, #{resourceType,jdbcType=VARCHAR}, 
+      #{permissionId,jdbcType=BIGINT})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.kuange.framework.model.SysPermissonResource" >
+    update sys_permisson_resource
+    set resource_id = #{resourceId,jdbcType=BIGINT},
+      resource_type = #{resourceType,jdbcType=VARCHAR},
+      permission_id = #{permissionId,jdbcType=BIGINT}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select id, resource_id, resource_type, permission_id
+    from sys_permisson_resource
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap" >
+    select id, resource_id, resource_type, permission_id
+    from sys_permisson_resource
+  </select>
+</mapper>
