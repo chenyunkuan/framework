@@ -13,15 +13,6 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = {"classpath:spring/spring.xml", "classpath:spring/spring-servlet.xml","classpath:spring/spring-mybatis.xml"})
-public class TestBase {
+public abstract class SpringJunitTestCase {
 
-   @Autowired
-   SysUserService sysUserService;
-
-    @Test
-   public void testSelectByPrimaryKey(){
-       SysUser user= sysUserService.getByPk(Long.valueOf(1));
-       System.out.println(user.getUserName());
-
-   }
 }

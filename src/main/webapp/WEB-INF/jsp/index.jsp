@@ -8,10 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap 101 Template</title>
     <!-- 新 Bootstrap 核心 CSS 文件 -->
-    <link rel="stylesheet" href="${basePath}/js/bootstrap/css/bootstrap.min.css">
-
-    <!-- 可选的Bootstrap主题文件（一般不用引入） -->
-    <link rel="stylesheet" href="${basePath}/js/bootstrap/css/bootstrap-theme.min.css">
 </head>
 <body>
 
@@ -78,14 +74,6 @@
 <!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
 <button type="button" class="btn btn-link">（链接）Link</button>
 
-
-<% String appBase = request.getContextPath();
-    request.setAttribute("basePath",appBase);
-%>
-${basePath}
 </body>
-<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
-<script src="${basePath}/js/jquery.min.js"></script>
-<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-<script src="${basePath}/js/bootstrap/js/bootstrap.min.js"></script>
+<%@include file="common/jsLib.jsp"%>jsp
 </html>
