@@ -9,3 +9,14 @@
 *.classpath
 *.log
 *.class
+*.class
+*.DS_Store
+*.lock
+*.swp
+.settings/
+.settings
+target/
+bin/
+.metadata
+.idea
+*.eml

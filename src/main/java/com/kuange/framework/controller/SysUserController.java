@@ -21,6 +21,12 @@ public class SysUserController {
     @RequestMapping(value="/find")
     public ModelAndView getById(Long id){
         sysUserService.getByPk(Long.valueOf(1));
-        return new ModelAndView("index");
+        return new ModelAndView("common/frame");
+    }
+
+    @RequestMapping(value="/list")
+    public ModelAndView List(Long id){
+        sysUserService.getByPk(Long.valueOf(1));
+        return new ModelAndView("list");
     }
 }

@@ -2,33 +2,53 @@
 <!DOCTYPE html>
 <html lang="zn-cn">
 <head>
-    <meta charset="UTF-8">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
     <title>Bootstrap 101 Template</title>
     <link rel="stylesheet" href="js/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="js/bootstrap/css/bootstrap-theme.min.css">
 </head>
 <body>
-<div class="loginBox">
 <form style="">
-    <div class="form-group">
-        <input type="email" class="form-control" id="userName" placeholder="用户名">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <div class="login-panel panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">登  录</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form role="form">
+                            <fieldset>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="用户名" name="email" type="email" autofocus>
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="密码" name="password" type="password" value="">
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input name="remember" type="checkbox" value="Remember Me">记住我
+                                    </label>
+                                </div>
+                                <!-- Change this to a button or input when using this as a form -->
+                                <a href="index.html" class="btn btn-lg btn-success btn-block">登录</a>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="form-group">
-        <input type="password" class="form-control" id="password" placeholder="密码">
-    </div>
-    <button type="submit" class="btn btn-default">提交</button>
 
 </form>
-
-</div>
 </body>
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap/js/bootstrap.min.js"></script>
 <style type="text/css">
-    .loginBox {width: 50%;align-content: center;margin: 20% 30%; border:#b2dba1}
 
 </style>
 </html>
