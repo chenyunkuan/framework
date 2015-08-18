@@ -10,7 +10,7 @@
     <div class="row">
         <div class="panel-body">
             <div class="col-md-3">
-                <jsp:include page="navi.jsp"/>
+                <jsp:include page="navigation.jsp"/>
             </div>
             <div class="col-md-9">
                 <jsp:include page="content.jsp"/>
