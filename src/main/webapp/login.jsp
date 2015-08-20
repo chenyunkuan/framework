@@ -10,9 +10,11 @@
     <title>Bootstrap 101 Template</title>
     <link rel="stylesheet" href="js/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="js/bootstrap/css/bootstrap-theme.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body>
-<form style="">
+<form>
     <div class="container">
         <div class="row">
             <div class="col-md-4 col-md-offset-4">
@@ -46,8 +48,6 @@
 
 </form>
 </body>
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap/js/bootstrap.min.js"></script>
 <style type="text/css">
 
 </style>
