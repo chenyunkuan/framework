@@ -3,10 +3,10 @@
     <div class="panel-body">
         <ul class="breadcrumb">
             <li>
-                <a href="#">主页</a> <span class="divider">/</span>
+                <a href="#">主页</a>
             </li>
             <li>
-                <a href="#">类目</a> <span class="divider">/</span>
+                <a href="#">类目</a>
             </li>
             <li class="active">
                 主题

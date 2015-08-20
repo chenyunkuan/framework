@@ -9,7 +9,7 @@
                     系统管理
                     <span class="pull-right glyphicon glyphicon-chevron-toggle"></span>
                 </a>
-                <ul id="systemSetting" class="nav nav-list secondmenu collapse">
+                <ul id="systemSetting" class="nav nav-list secondmenu collapse in">
                     <li><a href="#"><i class="glyphicon glyphicon-user"></i>&nbsp;用户管理</a></li>
                     <li><a href="#"><i class="glyphicon glyphicon-th-list"></i>&nbsp;菜单管理</a></li>
                     <li><a href="#"><i class="glyphicon glyphicon-asterisk"></i>&nbsp;角色管理</a></li>
@@ -42,7 +42,6 @@
                     <li><a href="#"><i class="glyphicon glyphicon-th-list"></i>&nbsp;分发包配置</a></li>
                 </ul>
             </li>
-
             <li>
                 <a href="#dicSetting" class="nav-header collapsed" data-toggle="collapse">
                     <i class="glyphicon glyphicon-bold"></i>
@@ -65,7 +64,6 @@
     </div>
 </div>
 <style>
-
     .nav-header.collapsed > span.glyphicon-chevron-toggle:before {
         content: "\e114";
     }
@@ -76,7 +74,7 @@
 
     .secondmenu a {
         font-size: 12px;
-        color: #4A515B;
+        color: rgba(49, 42, 49, 0.93);
         text-align: center;
     }
 
