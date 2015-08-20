@@ -10,7 +10,7 @@ drop table if exists sys_permisson_resource;
 
 drop table if exists sys_resource_element;
 
-drop table if exists sys_resource_menu;
+drop table if exists sys_resource_navigation;
 
 drop table if exists sys_role;
 
@@ -111,13 +111,14 @@ create table sys_resource_element
 comment = "系统元素资源";
 
 /*==============================================================*/
-/* Table: sys_resource_menu                                     */
+/* Table: sys_resource_navigation                               */
 /*==============================================================*/
-create table sys_resource_menu
+create table sys_resource_navigation
 (
    id                   bigint not null auto_increment,
    code                 varchar(20),
    name                 varchar(20),
+   img                  varchar(30),
    url                  varchar(50),
    comment              varchar(50),
    leve                 int,
