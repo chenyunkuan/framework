@@ -9,10 +9,10 @@
     </div>
     <div class="row">
         <div class="panel-body">
-            <div class="col-md-3">
+            <div class="col-md-2">
                 <jsp:include page="navigation.jsp"/>
             </div>
-            <div class="col-md-9">
+            <div class="col-md-10">
                 <jsp:include page="content.jsp"/>
             </div>
         </div>

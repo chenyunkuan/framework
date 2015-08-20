@@ -12,7 +12,7 @@ import org.springframework.web.servlet.ModelAndView;
  * Created by Administrator on 2015/8/15 0015.
  */
 @Controller
-@RequestMapping(value="/user")
+@RequestMapping(value="/sysUser")
 public class SysUserController {
 
     @Autowired
@@ -20,13 +20,12 @@ public class SysUserController {
 
     @RequestMapping(value="/find")
     public ModelAndView getById(Long id){
-        sysUserService.getByPk(Long.valueOf(1));
+        sysUserService.queryById(Long.valueOf(1));
         return new ModelAndView("common/frame");
     }
 
     @RequestMapping(value="/list")
     public ModelAndView List(Long id){
-        sysUserService.getByPk(Long.valueOf(1));
         return new ModelAndView("list");
     }
 }
