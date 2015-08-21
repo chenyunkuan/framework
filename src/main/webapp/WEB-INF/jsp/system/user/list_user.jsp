@@ -1,372 +1,47 @@
-
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@include file="../../common/jsLib.jsp"%>
+<%@include file="../../common/jsLib.jsp" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
     <title></title>
 </head>
 <body>
-<table class="table">
-  <thead>
-  <tr>
-    <th>
-      编号
-    </th>
-    <th>
-      产品
-    </th>
-    <th>
-      交付时间
-    </th>
-    <th>
-      状态
-    </th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td>
-      1
-    </td>
-    <td>
-      TB - Monthly
-    </td>
-    <td>
-      01/04/2012
-    </td>
-    <td>
-      Default
-    </td>
-  </tr>
-  <tr class="success">
-    <td>
-      1
-    </td>
-    <td>
-      TB - Monthly
-    </td>
-    <td>
-      01/04/2012
-    </td>
-    <td>
-      Approved
-    </td>
-  </tr>
-  <tr class="error">
-    <td>
-      2
-    </td>
-    <td>
-      TB - Monthly
-    </td>
-    <td>
-      02/04/2012
-    </td>
-    <td>
-      Declined
-    </td>
-  </tr>
-  <tr class="warning">
-    <td>
-      3
-    </td>
-    <td>
-      TB - Monthly
-    </td>
-    <td>
-      03/04/2012
-    </td>
-    <td>
-      Pending
-    </td>
-  </tr>
-  <tr class="info">
-    <td>
-      4
-    </td>
-    <td>
-      TB - Monthly
-    </td>
-    <td>
-      04/04/2012
-    </td>
-    <td>
-      Call in to confirm
-    </td>
-  </tr>
-  <tr class="info">
-    <td>
-      4
-    </td>
-    <td>
-      TB - Monthly
-    </td>
-    <td>
-      04/04/2012
-    </td>
-    <td>
-      Call in to confirm
-    </td>
-  </tr>
-  <tr class="info">
-    <td>
-      4
-    </td>
-    <td>
-      TB - Monthly
-    </td>
-    <td>
-      04/04/2012
-    </td>
-    <td>
-      Call in to confirm
-    </td>
-  </tr>
-  <tr class="info">
-    <td>
-      4
-    </td>
-    <td>
-      TB - Monthly
-    </td>
-    <td>
-      04/04/2012
-    </td>
-    <td>
-      Call in to confirm
-    </td>
-  </tr>
-  <tr class="info">
-    <td>
-      4
-    </td>
-    <td>
-      TB - Monthly
-    </td>
-    <td>
-      04/04/2012
-    </td>
-    <td>
-      Call in to confirm
-    </td>
-  </tr>
-  <tr class="info">
-    <td>
-      4
-    </td>
-    <td>
-      TB - Monthly
-    </td>
-    <td>
-      04/04/2012
-    </td>
-    <td>
-      Call in to confirm
-    </td>
-  </tr>
-  <tr class="info">
-    <td>
-      4
-    </td>
-    <td>
-      TB - Monthly
-    </td>
-    <td>
-      04/04/2012
-    </td>
-    <td>
-      Call in to confirm
-    </td>
-  </tr>
-  <tr class="info">
-    <td>
-      4
-    </td>
-    <td>
-      TB - Monthly
-    </td>
-    <td>
-      04/04/2012
-    </td>
-    <td>
-      Call in to confirm
-    </td>
-  </tr>
-  <tr class="info">
-    <td>
-      4
-    </td>
-    <td>
-      TB - Monthly
-    </td>
-    <td>
-      04/04/2012
-    </td>
-    <td>
-      Call in to confirm
-    </td>
-  </tr>
-  <tr class="info">
-    <td>
-      4
-    </td>
-    <td>
-      TB - Monthly
-    </td>
-    <td>
-      04/04/2012
-    </td>
-    <td>
-      Call in to confirm
-    </td>
-  </tr>
-  <tr class="info">
-    <td>
-      4
-    </td>
-    <td>
-      TB - Monthly
-    </td>
-    <td>
-      04/04/2012
-    </td>
-    <td>
-      Call in to confirm
-    </td>
-  </tr>
-  <tr class="info">
-    <td>
-      4
-    </td>
-    <td>
-      TB - Monthly
-    </td>
-    <td>
-      04/04/2012
-    </td>
-    <td>
-      Call in to confirm
-    </td>
-  </tr>
-  <tr class="info">
-    <td>
-      4
-    </td>
-    <td>
-      TB - Monthly
-    </td>
-    <td>
-      04/04/2012
-    </td>
-    <td>
-      Call in to confirm
-    </td>
-  </tr>
-  <tr class="info">
-    <td>
-      4
-    </td>
-    <td>
-      TB - Monthly
-    </td>
-    <td>
-      04/04/2012
-    </td>
-    <td>
-      Call in to confirm
-    </td>
-  </tr>
-  <tr class="info">
-    <td>
-      4
-    </td>
-    <td>
-      TB - Monthly
-    </td>
-    <td>
-      04/04/2012
-    </td>
-    <td>
-      Call in to confirm
-    </td>
-  </tr>
-  <tr class="info">
-    <td>
-      4
-    </td>
-    <td>
-      TB - Monthly
-    </td>
-    <td>
-      04/04/2012
-    </td>
-    <td>
-      Call in to confirm
-    </td>
-  </tr>
-  <tr class="info">
-    <td>
-      4
-    </td>
-    <td>
-      TB - Monthly
-    </td>
-    <td>
-      04/04/2012
-    </td>
-    <td>
-      Call in to confirm
-    </td>
-  </tr>
-  <tr class="info">
-    <td>
-      4
-    </td>
-    <td>
-      TB - Monthly
-    </td>
-    <td>
-      04/04/2012
-    </td>
-    <td>
-      Call in to confirm
-    </td>
-  </tr>
-  <tr class="info">
-    <td>
-      4
-    </td>
-    <td>
-      TB - Monthly
-    </td>
-    <td>
-      04/04/2012
-    </td>
-    <td>
-      Call in to confirm
-    </td>
-  </tr>
-  </tbody>
+<table class="table table-condensed table-hover table-striped">
+    <thead>
+    <tr>
+        <th>id</th>
+        <th>姓名</th>
+        <th>性别</th>
+    </tr>
+    </thead>
+    <tbody>
+        <c:forEach var="model" items="${list}" step="1">
+            <tr>
+                <td>${model.id}</td>
+                <td>${model.userName}</td>
+                <td>${model.gender}</td>
+            </tr>
+        </c:forEach>
+    </tbody>
 </table>
-
 <nav>
-  <ul class="pagination">
-    <li>
-      <a href="#" aria-label="Previous">
-        <span aria-hidden="true">&laquo;</span>
-      </a>
-    </li>
-    <li><a href="#">1</a></li>
-    <li><a href="#">2</a></li>
-    <li><a href="#">3</a></li>
-    <li><a href="#">4</a></li>
-    <li><a href="#">5</a></li>
-    <li>
-      <a href="#" aria-label="Next">
-        <span aria-hidden="true">&raquo;</span>
-      </a>
-    </li>
-  </ul>
+    <ul class="pagination">
+        <li>
+            <a href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+            </a>
+        </li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li>
+            <a href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+            </a>
+        </li>
+    </ul>
 </nav>
 </body>
 </html>

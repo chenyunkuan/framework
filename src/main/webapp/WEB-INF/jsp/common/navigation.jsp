@@ -1,5 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<div class="panel panel-default">
+<div class="panel panel-default" id="panel_nav">
     <div class="panel-heading">导航</div>
     <div class="panel-body">
         <ul id="main-nav" class="main-nav nav nav-stacked" >
@@ -10,11 +10,11 @@
                     <span class="pull-right glyphicon glyphicon-chevron-toggle"></span>
                 </a>
                 <ul id="systemSetting" class="nav nav-list secondmenu collapse in">
-                    <li><a href="#"><i class="glyphicon glyphicon-user"></i>&nbsp;用户管理</a></li>
-                    <li><a href="#"><i class="glyphicon glyphicon-th-list"></i>&nbsp;菜单管理</a></li>
-                    <li><a href="#"><i class="glyphicon glyphicon-asterisk"></i>&nbsp;角色管理</a></li>
-                    <li><a href="#"><i class="glyphicon glyphicon-edit"></i>&nbsp;修改密码</a></li>
-                    <li><a href="#"><i class="glyphicon glyphicon-eye-open"></i>&nbsp;日志查看</a></li>
+                    <li><a href="${basePath}/sysUser/toList" target="content_main"><i class="glyphicon glyphicon-user"></i>&nbsp;用户管理</a></li>
+                    <li><a href="#" target="content_main"><i class="glyphicon glyphicon-th-list"></i>&nbsp;菜单管理</a></li>
+                    <li><a href="#" target="content_main"><i class="glyphicon glyphicon-asterisk"></i>&nbsp;角色管理</a></li>
+                    <li><a href="#" target="content_main"><i class="glyphicon glyphicon-edit"></i>&nbsp;修改密码</a></li>
+                    <li><a href="#" target="content_main"><i class="glyphicon glyphicon-eye-open"></i>&nbsp;日志查看</a></li>
                 </ul>
             </li>
             <li>

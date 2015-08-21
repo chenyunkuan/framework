@@ -10,4 +10,7 @@
 <script src="${basePath}/js/jquery.min.js"></script>
 <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
 <script src="${basePath}/js/bootstrap/js/bootstrap.min.js"></script>
+<script src="${basePath}/js/bootgrid/jquery.bootgrid.min.css"></script>
+<script src="${basePath}/js/bootgrid/jquery.bootgrid.min.js"></script>
+<script src="${basePath}/js/bootgrid/jquery.bootgrid.fa.min.js"></script>
 
