@@ -13,8 +13,6 @@ public class UserTest extends  SpringJunitTestCase {
 
     @Test
     public void testSelectByPrimaryKey(){
-        SysUser user= sysUserService.getByPk(Long.valueOf(1));
-        System.out.println(user.getUserName());
 
     }
 }
