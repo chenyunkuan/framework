@@ -8,4 +8,6 @@ import com.kuange.framework.model.SysUser;
  */
 public interface SysUserService extends CommonServiceTemlate<SysUser>{
 
+    SysUser authorize(String userName,String password);
+
 }

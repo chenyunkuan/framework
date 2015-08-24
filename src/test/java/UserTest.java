@@ -13,6 +13,6 @@ public class UserTest extends  SpringJunitTestCase {
 
     @Test
     public void testSelectByPrimaryKey(){
-
+        System.out.println("hello,world");
     }
 }

@@ -16,7 +16,7 @@
         <param-name>contextConfigLocation</param-name>
         <param-value>classpath:spring/spring.xml,classpath:spring/spring-mybatis.xml</param-value>
     </context-param>
-     <!-- web层容器 -->
+    <!-- web层容器 -->
     <servlet>
         <servlet-name>springMvc</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
@@ -48,6 +48,17 @@
         <filter-name>SpringEncodingFilter</filter-name>
         <url-pattern>/*</url-pattern>
     </filter-mapping>
+
+
+    <filter>
+        <filter-name>shiroFilter</filter-name>
+        <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>shiroFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
 
     <error-page>
         <!-- 路径不正确 -->

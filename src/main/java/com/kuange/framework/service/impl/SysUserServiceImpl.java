@@ -22,6 +22,10 @@ public class SysUserServiceImpl implements SysUserService {
     @Autowired
     private SysUserMapper sysUserMapper;
 
+    public SysUser authorize(String userName, String password) {
+        return null;
+    }
+
     public SysUser queryById(Long id) {
         return sysUserMapper.selectByPrimaryKey(id);
     }

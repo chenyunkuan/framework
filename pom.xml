@@ -247,56 +247,67 @@
             <version>1.2.4</version>
         </dependency>
 
-</dependencies>
+    </dependencies>
 
-<profiles>
-<profile>
-    <id>dev</id>
-    <activation>
-        <activeByDefault>true</activeByDefault>
-    </activation>
+    <profiles>
+        <profile>
+            <id>dev</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <build>
+                <resources>
+                    <resource>
+                        <directory>etc/dev</directory>
+                    </resource>
+                    <resource>
+                        <directory>src/main/resources</directory>
+                    </resource>
+                </resources>
+            </build>
+        </profile>
+
+        <profile>
+            <id>test</id>
+            <build>
+                <resources>
+                    <resource>
+                        <directory>etc/test</directory>
+                    </resource>
+                    <resource>
+                        <directory>src/test/resources</directory>
+                    </resource>
+                </resources>
+            </build>
+        </profile>
+
+        <profile>
+            <id>online</id>
+            <build>
+                <resources>
+                    <resource>
+                        <directory>etc/online</directory>
+                    </resource>
+                    <resource>
+                        <directory>src/main/resources</directory>
+                    </resource>
+                </resources>
+            </build>
+        </profile>
+    </profiles>
+
     <build>
+        <finalName>platform-framework</finalName>
+        <!-- myBaitis xml 文件如果放在源码包里，必须添加以下配置，打包时才会编译xml文件-->
         <resources>
             <resource>
-                <directory>etc/dev</directory>
-            </resource>
-            <resource>
-                <directory>src/main/resources</directory>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.properties</include>
+                    <include>**/*.xml</include>
+                </includes>
+                <filtering>false</filtering>
             </resource>
         </resources>
     </build>
-</profile>
-
-<profile>
-    <id>test</id>
-    <build>
-        <resources>
-            <resource>
-                <directory>etc/test</directory>
-            </resource>
-            <resource>
-                <directory>src/test/resources</directory>
-            </resource>
-        </resources>
-    </build>
-</profile>
-
-<profile>
-    <id>online</id>
-    <build>
-        <resources>
-            <resource>
-                <directory>etc/online</directory>
-            </resource>
-            <resource>
-                <directory>src/main/resources</directory>
-            </resource>
-        </resources>
-    </build>
-</profile>
-</profiles>
-
-<build>
-<finalName>platform-framework</finalName>
-</build>
-        </project>
+</project>

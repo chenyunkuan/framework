@@ -1,5 +1,10 @@
 package com.kuange.framework.controller;
 
+import com.kuange.framework.model.SysUser;
+import com.kuange.framework.service.SysUserService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,9 +20,13 @@ import javax.servlet.http.HttpServletRequest;
 @RequestMapping("/auth")
 public class LoginController {
 
+    private static final Logger logger = LoggerFactory.getLogger(LoginController.class);
+
+    @Autowired
+    private SysUserService sysUserService;
+
     @RequestMapping("/login")
-    @ResponseBody
-    public ModelAndView login(HttpServletRequest request){
+    public ModelAndView login(String userName,String passWord){
         ModelMap modelMap = new ModelMap();
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.addAllObjects(modelMap);
