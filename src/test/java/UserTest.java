@@ -14,5 +14,6 @@ public class UserTest extends  SpringJunitTestCase {
     @Test
     public void testSelectByPrimaryKey(){
         System.out.println("hello,world");
+        sysUserService.authorize("admin","admin");
     }
 }

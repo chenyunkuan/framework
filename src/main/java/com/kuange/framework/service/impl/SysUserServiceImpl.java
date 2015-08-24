@@ -23,7 +23,7 @@ public class SysUserServiceImpl implements SysUserService {
     private SysUserMapper sysUserMapper;
 
     public SysUser authorize(String userName, String password) {
-        return null;
+        return sysUserMapper.authorize(userName,password);
     }
 
     public SysUser queryById(Long id) {

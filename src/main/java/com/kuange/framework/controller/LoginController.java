@@ -27,9 +27,11 @@ public class LoginController {
 
     @RequestMapping("/login")
     public ModelAndView login(String userName,String passWord){
+        SysUser user=sysUserService.authorize(userName, passWord);
         ModelMap modelMap = new ModelMap();
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.addAllObjects(modelMap);
+
         return new ModelAndView("frame");
     }
 }

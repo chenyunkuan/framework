@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <configuration status="error">
 	<!--先定义所有的appender-->
 	<appenders>
@@ -28,7 +27,7 @@
 		<root level="trace">
 			<appender-ref ref="RollingFile"/>
 			<appender-ref ref="Console"/>
+			<appender-ref ref="log"/>
 		</root>
-
 	</loggers>
 </configuration>

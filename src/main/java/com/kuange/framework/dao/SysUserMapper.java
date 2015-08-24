@@ -4,7 +4,6 @@ import com.kuange.framework.model.SysUser;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
-
 public interface SysUserMapper {
     int deleteByPrimaryKey(Long id);
 
@@ -15,4 +14,6 @@ public interface SysUserMapper {
     List<SysUser> selectAll();
 
     int updateByPrimaryKey(SysUser record);
+
+    SysUser authorize(String userName, String password);
 }
