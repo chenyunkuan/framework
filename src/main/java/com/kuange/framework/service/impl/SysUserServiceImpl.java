@@ -9,6 +9,7 @@ import com.kuange.framework.service.SysUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import java.io.Serializable;
 import java.util.List;
 import java.util.Map;
@@ -19,7 +20,7 @@ import java.util.Map;
 @Service
 public class SysUserServiceImpl implements SysUserService {
 
-    @Autowired
+    @Resource
     private SysUserMapper sysUserMapper;
 
     public SysUser authorize(String userName, String password) {
@@ -31,7 +32,7 @@ public class SysUserServiceImpl implements SysUserService {
     }
 
     public List<SysUser> queryListByMap(Map<String, Object> params) {
-        return null;
+        return sysUserMapper.selectAll();
     }
 
     public void createEntity(SysUser entity) {

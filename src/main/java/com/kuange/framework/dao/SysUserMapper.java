@@ -1,10 +1,12 @@
 package com.kuange.framework.dao;
 
 import com.kuange.framework.model.SysUser;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
 public interface SysUserMapper {
+
     int deleteByPrimaryKey(Long id);
 
     int insert(SysUser record);
